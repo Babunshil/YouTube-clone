@@ -1,0 +1,79 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 58px;
+  width:72px;
+  background-color: white;
+  z-index: 200;
+  padding-top: 4px;
+  transition: width 1s;
+}
+
+.sidebar-boxes{
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: height 1s, flex-direction 1s, border-radius 1s, justify-content 1s, align-items 1s;
+}
+
+.sidebar-boxes:hover{
+  background-color:rgb(245, 242, 242);
+}
+
+.sidebar-boxes img{
+  width: 24px;
+  margin-bottom: 6px;
+  transition: width 1s, padding-left 1s padding-right 1s;
+}
+
+.sidebar-boxes div{
+  font-size: 10px;
+  transition: font-size 1s, font-weight 1s;
+}
+
+@media (min-width: 1201px) {
+  .sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 58px;
+    width:172px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 4px;
+  }
+
+  .sidebar-boxes{
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .sidebar-boxes img{
+    width: 26px;
+    margin-bottom: 6px;
+    padding-right: 16px;
+    padding-left: 25px;
+  }
+  
+  .sidebar-boxes div{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .main-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  body{
+    padding-left: 195px;
+  }
+}
